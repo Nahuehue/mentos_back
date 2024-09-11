@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "composer install --optimize-autoloader --no-dev && npm install",
+        "start": "php artisan serve --host=0.0.0.0 --port=8080",
+        "dev": "composer update && php artisan serve --host=localhost --port=8080"
+    },
+    "devDependencies": {
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0",
+        "vite": "^5.0"
+    }
+}
